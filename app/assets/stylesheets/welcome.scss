@@ -4,12 +4,19 @@
 
 .snake-head {
     font-family: 'Indie Flower', cursive;
-    color: red;
     background: rgba(10, 10, 10, .7);
+    text-align: center;
 }
     
 .snake-head h1 {
+    color: red;
     font-size: 45px;
-    text-align: center;
+}
+.snake-head h3 {
+	color: white;
+	font-size: 16px;
 }
 
+.jumbotron {
+	/*text-align: justify;*/
+}
