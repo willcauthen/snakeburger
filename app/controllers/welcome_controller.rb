@@ -3,6 +3,7 @@ class WelcomeController < ApplicationController
   end
 
   def about
+  	@chefs = Chef.all
   end
 
   def menu
