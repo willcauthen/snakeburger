@@ -4,7 +4,7 @@ class WelcomeController < ApplicationController
 
   def about
   	@chefs = Chef.all
-  	if @chefs = nil 
+  	if @chefs == nil 
   		redirect_to root_path
   	end
   end
