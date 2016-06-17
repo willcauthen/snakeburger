@@ -11,15 +11,21 @@
 	</div>
 
 	<% @chefs.each do |chef| %>
-		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 jumbotron">
-				<strong>Name:</strong> <%= chef.name %> <br/>
-				<strong>Position:</strong> <%= chef.position %> <br/>
-				<strong>Description:</strong>
-				<div class="jumbotron">
-					<%= chef.description %>
+		<% if (chef != nil)  %>
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 jumbotron">
+					<strong>Name:</strong> <%= chef.name %> <br/>
+					<strong>Position:</strong> <%= chef.position %> <br/>
+					<strong>Description:</strong>
+					<div class="jumbotron">
+						<%= chef.description %>
+					</div>
 				</div>
 			</div>
-		</div>
+		<% else %>
+			<div class="jumbotron">
+				<h2>Whoops! turns out no one works here!</h2>
+			</div>
+		<% end %>
 	<% end %>
 </div>
