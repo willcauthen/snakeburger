@@ -10,4 +10,6 @@ wilbo = Chef.new(name: "Wilbo", position: "Boss Man", description: "Owner and pu
 
 vaz = Chef.new(name: "Doctor Chef Vaz", position: "Chef", description: "Something of a legend in the chef-doctor field, Dr. Chef Vaz has been with us for years, boldly exploring the field of snake-meat with reckless abandon, where lesser men and women fear to go").save
 
+jeremy = Chef.new(name: "Jeremy Fischer", position: "Chef", description: "We're still waiting on Jeremy to write his description. HURRY UP, JEREMY. WHAT DO WE EVEN PAY YOU FOR?").save
+
 arthur = Chef.new(name: "Arthur McKissik", position: "Distributor", description: "This elaborate sham of a restaurant would be impossible without Arthur. He sources our premium-grade snake flesh, always ensuring that we have the freshest goods on the market").save
