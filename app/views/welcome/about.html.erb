@@ -1,20 +1,25 @@
 <div class="conatiner">
 	<div class="row">
-		<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 jumbotron">
-			<h1>Meet the Team</h1>
-			<p>this page is under construction! as is our team! contact the owner if you want in on this lucrative and exciting project</p>
-		</div>
-	</div>
-	<% @chefs.each do |chef| %>
-	<div class="row">
-		<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 jumbotron">
-			<strong>Name:</strong> <%= chef.name %> <br/>
-			<strong>Position:</strong> <%= chef.position %> <br/>
-			<strong>Description:</strong>
-			<div class="jumbotron">
-				<%= chef.description %>
+		<div class="col-sm-6 col-sm-offset-3">
+			<div class="snake-head"> 
+				<hr>
+				<h1>Meet the Team</h1>
+				<h3>Meet the invaluable men and women upon whom we depend to serve you high-quality snake meat!</h3>
+				<hr>
 			</div>
 		</div>
 	</div>
+
+	<% @chefs.each do |chef| %>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 jumbotron">
+				<strong>Name:</strong> <%= chef.name %> <br/>
+				<strong>Position:</strong> <%= chef.position %> <br/>
+				<strong>Description:</strong>
+				<div class="jumbotron">
+					<%= chef.description %>
+				</div>
+			</div>
+		</div>
 	<% end %>
 </div>
